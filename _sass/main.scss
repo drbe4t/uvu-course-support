@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+
+
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+
+$uvuGreen: #275D38;
+$uvuGreen-inverted: rgb(65, 228, 117);
+$uvuGray: #8E8C89;
+$uvuGTransparent: rgba(142, 140, 137, 0.541);
+$uvuBlue: #00688C;
+$title-color: black;
+$link-hover: $uvuBlue;
+$link-hover-border: $uvuBlue;
+$button-hover-color: rgb(1, 134, 179);
+$button-border-color: $uvuBlue;
+$button-background-color: $uvuBlue;
+
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+$primary: $uvuGreen;
+$button-text-hover-color: white;
+
+.hero {
+    background-image:linear-gradient(rgba(142, 141, 137, 0.514),rgba(142, 140, 137, 0.514)), url("../Media/20160516_Campus\ Architecture_0092\ \(1\).jpg");
+    background-size: cover;
+    background-position:  center center;
+}
+
+.heading {
+        text-shadow: 2px 1px 1em  black;
+}
+
+
+
+.main-content {
+    p  {
+        padding: 1em 0;
+    }
+    .uvu-heading {
+        font-size: 1.2em;
+        margin: 1em 0;
+        background-color: $uvuGreen;
+        color: white;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .uvu-listing {
+        margin-left:15px;
+        padding: .7em;
+    }
+    .uvu-chat {
+        margin-top: 1em;
+       border-color:  black;
+       a {
+           color: black;
+       }
+    }
+}
+.footer {
+    background-color: white;
+    .columns {
+        border-top: solid black 5px;
+    }
+    p {
+        color: white;
+    }
+    img {
+        width: 15em;
+        padding: 30px 5px;
+    }
+}
